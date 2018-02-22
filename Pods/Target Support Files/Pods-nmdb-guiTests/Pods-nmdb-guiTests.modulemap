@@ -1,0 +1,6 @@
+framework module Pods_nmdb_guiTests {
+  umbrella header "Pods-nmdb-guiTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

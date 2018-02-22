@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1070102C8967DFB31606B2A9 /* Pods_nmdb_guiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8F69CB28A124E840912564 /* Pods_nmdb_guiTests.framework */; };
+		220FAA0551955F18986EC069 /* Pods_nmdb_guiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA5BC3D6AB8A69BFFFBEFD /* Pods_nmdb_guiUITests.framework */; };
+		4B37863E203F28DA00EC3608 /* MovieBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37863D203F28DA00EC3608 /* MovieBusiness.swift */; };
+		4B378640203F299500EC3608 /* ReachabilityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37863F203F299500EC3608 /* ReachabilityExtension.swift */; };
+		4B378643203F2C9600EC3608 /* BusinessError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B378642203F2C9500EC3608 /* BusinessError.swift */; };
+		4B378645203F2D4000EC3608 /* MovieProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B378644203F2D4000EC3608 /* MovieProvider.swift */; };
+		4B378647203F336F00EC3608 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B378646203F336E00EC3608 /* Reachability.swift */; };
+		4B37864A203F349200EC3608 /* MovieRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B378649203F349200EC3608 /* MovieRequest.swift */; };
+		4B37864C203F38C400EC3608 /* ListMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37864B203F38C400EC3608 /* ListMovie.swift */; };
+		4B37864E203F395100EC3608 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37864D203F395100EC3608 /* Movie.swift */; };
+		4B5F4EA3203DDD3800721309 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F4EA2203DDD3800721309 /* Identifiable.swift */; };
+		4B5F4EAF203DE4A400721309 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F4EAE203DE4A400721309 /* HomeCollectionViewController.swift */; };
+		4B5F4EB1203DE52600721309 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F4EB0203DE52600721309 /* MovieCollectionViewCell.swift */; };
+		4B5F4EB4203DEE6C00721309 /* BaseAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5F4EB3203DEE6C00721309 /* BaseAPIProvider.swift */; };
+		4BA22019203DD8E20073B53A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA22018203DD8E20073B53A /* AppDelegate.swift */; };
+		4BA2201E203DD8E20073B53A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2201C203DD8E20073B53A /* Main.storyboard */; };
+		4BA22020203DD8E20073B53A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA2201F203DD8E20073B53A /* Assets.xcassets */; };
+		4BA22023203DD8E20073B53A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BA22021203DD8E20073B53A /* LaunchScreen.storyboard */; };
+		4BA2202E203DD8E30073B53A /* nmdb_guiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA2202D203DD8E30073B53A /* nmdb_guiTests.swift */; };
+		4BA22039203DD8E30073B53A /* nmdb_guiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA22038203DD8E30073B53A /* nmdb_guiUITests.swift */; };
+		F6A688698A21DFAF9339FB9E /* Pods_nmdb_gui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BA405422C47A28D57283D1 /* Pods_nmdb_gui.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BA2202A203DD8E30073B53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA2200D203DD8E20073B53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA22014203DD8E20073B53A;
+			remoteInfo = "nmdb-gui";
+		};
+		4BA22035203DD8E30073B53A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4BA2200D203DD8E20073B53A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4BA22014203DD8E20073B53A;
+			remoteInfo = "nmdb-gui";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		244DFFD3BEB6E5B199CA359C /* Pods-nmdb-gui.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-gui.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-gui/Pods-nmdb-gui.debug.xcconfig"; sourceTree = "<group>"; };
+		2C56F42B5AB299B2C03F679E /* Pods-nmdb-guiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-guiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-guiUITests/Pods-nmdb-guiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B37863D203F28DA00EC3608 /* MovieBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBusiness.swift; sourceTree = "<group>"; };
+		4B37863F203F299500EC3608 /* ReachabilityExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityExtension.swift; sourceTree = "<group>"; };
+		4B378642203F2C9500EC3608 /* BusinessError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessError.swift; sourceTree = "<group>"; };
+		4B378644203F2D4000EC3608 /* MovieProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProvider.swift; sourceTree = "<group>"; };
+		4B378646203F336E00EC3608 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		4B378649203F349200EC3608 /* MovieRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRequest.swift; sourceTree = "<group>"; };
+		4B37864B203F38C400EC3608 /* ListMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovie.swift; sourceTree = "<group>"; };
+		4B37864D203F395100EC3608 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		4B5F4EA2203DDD3800721309 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		4B5F4EAE203DE4A400721309 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		4B5F4EB0203DE52600721309 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B5F4EB3203DEE6C00721309 /* BaseAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIProvider.swift; sourceTree = "<group>"; };
+		4BA22015203DD8E20073B53A /* nmdb-gui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nmdb-gui.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA22018203DD8E20073B53A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4BA2201D203DD8E20073B53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BA2201F203DD8E20073B53A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4BA22022203DD8E20073B53A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4BA22024203DD8E20073B53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA22029203DD8E30073B53A /* nmdb-guiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nmdb-guiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA2202D203DD8E30073B53A /* nmdb_guiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nmdb_guiTests.swift; sourceTree = "<group>"; };
+		4BA2202F203DD8E30073B53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA22034203DD8E30073B53A /* nmdb-guiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nmdb-guiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA22038203DD8E30073B53A /* nmdb_guiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nmdb_guiUITests.swift; sourceTree = "<group>"; };
+		4BA2203A203DD8E30073B53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BDED16075F6E4331D21CD79 /* Pods-nmdb-guiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-guiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-guiTests/Pods-nmdb-guiTests.release.xcconfig"; sourceTree = "<group>"; };
+		71CA5BC3D6AB8A69BFFFBEFD /* Pods_nmdb_guiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmdb_guiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73BA405422C47A28D57283D1 /* Pods_nmdb_gui.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmdb_gui.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8F69CB28A124E840912564 /* Pods_nmdb_guiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_nmdb_guiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E900D90A0FC13185E5B5878 /* Pods-nmdb-gui.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-gui.release.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-gui/Pods-nmdb-gui.release.xcconfig"; sourceTree = "<group>"; };
+		C0450C75C8417A4C2056A56B /* Pods-nmdb-guiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-guiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-guiTests/Pods-nmdb-guiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8B6E3FE53B428B3EB59C7BB /* Pods-nmdb-guiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-nmdb-guiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-nmdb-guiUITests/Pods-nmdb-guiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4BA22012203DD8E20073B53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A688698A21DFAF9339FB9E /* Pods_nmdb_gui.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22026203DD8E30073B53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1070102C8967DFB31606B2A9 /* Pods_nmdb_guiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22031203DD8E30073B53A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				220FAA0551955F18986EC069 /* Pods_nmdb_guiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B37863C203F289100EC3608 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				4B37863D203F28DA00EC3608 /* MovieBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		4B378641203F2C7400EC3608 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				4B378642203F2C9500EC3608 /* BusinessError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		4B378648203F347400EC3608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B378649203F349200EC3608 /* MovieRequest.swift */,
+				4B37864B203F38C400EC3608 /* ListMovie.swift */,
+				4B37864D203F395100EC3608 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B5F4EA0203DDCE200721309 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4B378648203F347400EC3608 /* Model */,
+				4B37863C203F289100EC3608 /* Business */,
+				4B5F4EB2203DEDF200721309 /* Provider */,
+				4B5F4EA9203DE1BF00721309 /* View */,
+				4B5F4EA6203DDDB500721309 /* Storyboards */,
+				4B5F4EA5203DDD7200721309 /* Infrastructure */,
+				4B5F4EA4203DDD6B00721309 /* Controller */,
+				4B5F4EA1203DDCF300721309 /* Extension Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4B5F4EA1203DDCF300721309 /* Extension Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4B378646203F336E00EC3608 /* Reachability.swift */,
+				4B37863F203F299500EC3608 /* ReachabilityExtension.swift */,
+				4B5F4EA2203DDD3800721309 /* Identifiable.swift */,
+			);
+			path = "Extension Protocols";
+			sourceTree = "<group>";
+		};
+		4B5F4EA4203DDD6B00721309 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EAB203DE42800721309 /* Home */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B5F4EA5203DDD7200721309 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				4B378641203F2C7400EC3608 /* Error */,
+				4BA22018203DD8E20073B53A /* AppDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		4B5F4EA6203DDDB500721309 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4BA22021203DD8E20073B53A /* LaunchScreen.storyboard */,
+				4BA2201C203DD8E20073B53A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4B5F4EA9203DE1BF00721309 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EAA203DE1C300721309 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B5F4EAA203DE1C300721309 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EB0203DE52600721309 /* MovieCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B5F4EAB203DE42800721309 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EAE203DE4A400721309 /* HomeCollectionViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4B5F4EB2203DEDF200721309 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EB3203DEE6C00721309 /* BaseAPIProvider.swift */,
+				4B378644203F2D4000EC3608 /* MovieProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		4BA2200C203DD8E20073B53A = {
+			isa = PBXGroup;
+			children = (
+				4BA22017203DD8E20073B53A /* nmdb-gui */,
+				4BA2202C203DD8E30073B53A /* nmdb-guiTests */,
+				4BA22037203DD8E30073B53A /* nmdb-guiUITests */,
+				4BA22016203DD8E20073B53A /* Products */,
+				B06FB01E533D23126B17AE9B /* Pods */,
+				D1DC1C1B0EDBB997D2EE9CBA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4BA22016203DD8E20073B53A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BA22015203DD8E20073B53A /* nmdb-gui.app */,
+				4BA22029203DD8E30073B53A /* nmdb-guiTests.xctest */,
+				4BA22034203DD8E30073B53A /* nmdb-guiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4BA22017203DD8E20073B53A /* nmdb-gui */ = {
+			isa = PBXGroup;
+			children = (
+				4B5F4EA0203DDCE200721309 /* Common */,
+				4BA2201F203DD8E20073B53A /* Assets.xcassets */,
+				4BA22024203DD8E20073B53A /* Info.plist */,
+			);
+			path = "nmdb-gui";
+			sourceTree = "<group>";
+		};
+		4BA2202C203DD8E30073B53A /* nmdb-guiTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA2202D203DD8E30073B53A /* nmdb_guiTests.swift */,
+				4BA2202F203DD8E30073B53A /* Info.plist */,
+			);
+			path = "nmdb-guiTests";
+			sourceTree = "<group>";
+		};
+		4BA22037203DD8E30073B53A /* nmdb-guiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4BA22038203DD8E30073B53A /* nmdb_guiUITests.swift */,
+				4BA2203A203DD8E30073B53A /* Info.plist */,
+			);
+			path = "nmdb-guiUITests";
+			sourceTree = "<group>";
+		};
+		B06FB01E533D23126B17AE9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244DFFD3BEB6E5B199CA359C /* Pods-nmdb-gui.debug.xcconfig */,
+				9E900D90A0FC13185E5B5878 /* Pods-nmdb-gui.release.xcconfig */,
+				C0450C75C8417A4C2056A56B /* Pods-nmdb-guiTests.debug.xcconfig */,
+				5BDED16075F6E4331D21CD79 /* Pods-nmdb-guiTests.release.xcconfig */,
+				E8B6E3FE53B428B3EB59C7BB /* Pods-nmdb-guiUITests.debug.xcconfig */,
+				2C56F42B5AB299B2C03F679E /* Pods-nmdb-guiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D1DC1C1B0EDBB997D2EE9CBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73BA405422C47A28D57283D1 /* Pods_nmdb_gui.framework */,
+				7A8F69CB28A124E840912564 /* Pods_nmdb_guiTests.framework */,
+				71CA5BC3D6AB8A69BFFFBEFD /* Pods_nmdb_guiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4BA22014203DD8E20073B53A /* nmdb-gui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA2203D203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-gui" */;
+			buildPhases = (
+				2AB6E23DF0271ABAE41945D9 /* [CP] Check Pods Manifest.lock */,
+				4BA22011203DD8E20073B53A /* Sources */,
+				4BA22012203DD8E20073B53A /* Frameworks */,
+				4BA22013203DD8E20073B53A /* Resources */,
+				B467D942081EA7912483DE07 /* [CP] Embed Pods Frameworks */,
+				36C2AA8965611F87C0EB238F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "nmdb-gui";
+			productName = "nmdb-gui";
+			productReference = 4BA22015203DD8E20073B53A /* nmdb-gui.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4BA22028203DD8E30073B53A /* nmdb-guiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA22040203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-guiTests" */;
+			buildPhases = (
+				1272CD9DE467F221B143DFD5 /* [CP] Check Pods Manifest.lock */,
+				4BA22025203DD8E30073B53A /* Sources */,
+				4BA22026203DD8E30073B53A /* Frameworks */,
+				4BA22027203DD8E30073B53A /* Resources */,
+				FAFFC2C2A39537DD1C309020 /* [CP] Embed Pods Frameworks */,
+				31524D50B13754980D0478BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA2202B203DD8E30073B53A /* PBXTargetDependency */,
+			);
+			name = "nmdb-guiTests";
+			productName = "nmdb-guiTests";
+			productReference = 4BA22029203DD8E30073B53A /* nmdb-guiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4BA22033203DD8E30073B53A /* nmdb-guiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BA22043203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-guiUITests" */;
+			buildPhases = (
+				9CD8816094D8E727E0235F5F /* [CP] Check Pods Manifest.lock */,
+				4BA22030203DD8E30073B53A /* Sources */,
+				4BA22031203DD8E30073B53A /* Frameworks */,
+				4BA22032203DD8E30073B53A /* Resources */,
+				D774488FB53559ADB7E75AA4 /* [CP] Embed Pods Frameworks */,
+				295FC6BE5047B89F7F12E531 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BA22036203DD8E30073B53A /* PBXTargetDependency */,
+			);
+			name = "nmdb-guiUITests";
+			productName = "nmdb-guiUITests";
+			productReference = 4BA22034203DD8E30073B53A /* nmdb-guiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4BA2200D203DD8E20073B53A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Guilherme Martins";
+				TargetAttributes = {
+					4BA22014203DD8E20073B53A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4BA22028203DD8E30073B53A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BA22014203DD8E20073B53A;
+					};
+					4BA22033203DD8E30073B53A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4BA22014203DD8E20073B53A;
+					};
+				};
+			};
+			buildConfigurationList = 4BA22010203DD8E20073B53A /* Build configuration list for PBXProject "nmdb-gui" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4BA2200C203DD8E20073B53A;
+			productRefGroup = 4BA22016203DD8E20073B53A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4BA22014203DD8E20073B53A /* nmdb-gui */,
+				4BA22028203DD8E30073B53A /* nmdb-guiTests */,
+				4BA22033203DD8E30073B53A /* nmdb-guiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BA22013203DD8E20073B53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA22023203DD8E20073B53A /* LaunchScreen.storyboard in Resources */,
+				4BA22020203DD8E20073B53A /* Assets.xcassets in Resources */,
+				4BA2201E203DD8E20073B53A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22027203DD8E30073B53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22032203DD8E30073B53A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1272CD9DE467F221B143DFD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nmdb-guiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		295FC6BE5047B89F7F12E531 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-guiUITests/Pods-nmdb-guiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AB6E23DF0271ABAE41945D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nmdb-gui-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31524D50B13754980D0478BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-guiTests/Pods-nmdb-guiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36C2AA8965611F87C0EB238F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-gui/Pods-nmdb-gui-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD8816094D8E727E0235F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-nmdb-guiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B467D942081EA7912483DE07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-gui/Pods-nmdb-gui-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-gui/Pods-nmdb-gui-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D774488FB53559ADB7E75AA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-guiUITests/Pods-nmdb-guiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAFFC2C2A39537DD1C309020 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-nmdb-guiTests/Pods-nmdb-guiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BA22011203DD8E20073B53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5F4EAF203DE4A400721309 /* HomeCollectionViewController.swift in Sources */,
+				4B5F4EA3203DDD3800721309 /* Identifiable.swift in Sources */,
+				4B378640203F299500EC3608 /* ReachabilityExtension.swift in Sources */,
+				4B37864A203F349200EC3608 /* MovieRequest.swift in Sources */,
+				4B37863E203F28DA00EC3608 /* MovieBusiness.swift in Sources */,
+				4B378643203F2C9600EC3608 /* BusinessError.swift in Sources */,
+				4B37864C203F38C400EC3608 /* ListMovie.swift in Sources */,
+				4B5F4EB4203DEE6C00721309 /* BaseAPIProvider.swift in Sources */,
+				4B37864E203F395100EC3608 /* Movie.swift in Sources */,
+				4B378645203F2D4000EC3608 /* MovieProvider.swift in Sources */,
+				4BA22019203DD8E20073B53A /* AppDelegate.swift in Sources */,
+				4B378647203F336F00EC3608 /* Reachability.swift in Sources */,
+				4B5F4EB1203DE52600721309 /* MovieCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22025203DD8E30073B53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA2202E203DD8E30073B53A /* nmdb_guiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BA22030203DD8E30073B53A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA22039203DD8E30073B53A /* nmdb_guiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BA2202B203DD8E30073B53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA22014203DD8E20073B53A /* nmdb-gui */;
+			targetProxy = 4BA2202A203DD8E30073B53A /* PBXContainerItemProxy */;
+		};
+		4BA22036203DD8E30073B53A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4BA22014203DD8E20073B53A /* nmdb-gui */;
+			targetProxy = 4BA22035203DD8E30073B53A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4BA2201C203DD8E20073B53A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA2201D203DD8E20073B53A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4BA22021203DD8E20073B53A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA22022203DD8E20073B53A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4BA2203B203DD8E30073B53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4BA2203C203DD8E30073B53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4BA2203E203DD8E30073B53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244DFFD3BEB6E5B199CA359C /* Pods-nmdb-gui.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-gui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-gui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4BA2203F203DD8E30073B53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E900D90A0FC13185E5B5878 /* Pods-nmdb-gui.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-gui/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-gui";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4BA22041203DD8E30073B53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0450C75C8417A4C2056A56B /* Pods-nmdb-guiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-guiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-guiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nmdb-gui.app/nmdb-gui";
+			};
+			name = Debug;
+		};
+		4BA22042203DD8E30073B53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BDED16075F6E4331D21CD79 /* Pods-nmdb-guiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-guiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-guiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nmdb-gui.app/nmdb-gui";
+			};
+			name = Release;
+		};
+		4BA22044203DD8E30073B53A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B6E3FE53B428B3EB59C7BB /* Pods-nmdb-guiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-guiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-guiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nmdb-gui";
+			};
+			name = Debug;
+		};
+		4BA22045203DD8E30073B53A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C56F42B5AB299B2C03F679E /* Pods-nmdb-guiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "nmdb-guiUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tabajara.nmdb-guiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "nmdb-gui";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BA22010203DD8E20073B53A /* Build configuration list for PBXProject "nmdb-gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA2203B203DD8E30073B53A /* Debug */,
+				4BA2203C203DD8E30073B53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA2203D203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-gui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA2203E203DD8E30073B53A /* Debug */,
+				4BA2203F203DD8E30073B53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA22040203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-guiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA22041203DD8E30073B53A /* Debug */,
+				4BA22042203DD8E30073B53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4BA22043203DD8E30073B53A /* Build configuration list for PBXNativeTarget "nmdb-guiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4BA22044203DD8E30073B53A /* Debug */,
+				4BA22045203DD8E30073B53A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4BA2200D203DD8E20073B53A /* Project object */;
+}

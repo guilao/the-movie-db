@@ -1,0 +1,6 @@
+framework module Pods_nmdb_gui {
+  umbrella header "Pods-nmdb-gui-umbrella.h"
+
+  export *
+  module * { export * }
+}
